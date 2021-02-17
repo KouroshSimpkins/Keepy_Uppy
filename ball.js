@@ -49,4 +49,8 @@ class Ball {
   isSameHeight(player) {
     return this.x >= player.x && this.x <= player.x + player.width;
   }
+
+  belowBottom() {
+    return this.y - this.r > height;
+  }
 }
